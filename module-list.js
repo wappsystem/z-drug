@@ -79,6 +79,8 @@
         "v1e-word-pairs-set2-trial3":	            {url:"$H/m/word-pairs/evening-wordpairs-set2-trial3.html"},
         "v1e-ftt-data-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"v1e-ftt-z-drug",form_module:"v1e-ftt-form-z-drug",task_name:"Visit 1 Day 1 Evening - FTT (12 mins)"},
         "v1e-ftt-form-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-form.html",Table:"v1e-ftt-z-drug",task_name:"Visit 1 Day 1 Evening FFT (12 mins)"},
+        "v1e-ftt-alt-data-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"v1e-ftt-alt-z-drug",form_module:"v1e-ftt-alt-form-z-drug",task_name:"Visit 1 Day 1 Evening - FTT Alt sequence (12 mins)"},
+        "v1e-ftt-alt-form-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-alt-form.html",Table:"v1e-ftt-alt-z-drug",task_name:"Visit 1 Day 1 Evening FTT Alt sequence (12 mins)"},
 
         "v1m-kss-data-z-drug":                    {url:"$H/m/library/kss-data.html",Table:"v1m-kss-z-drug",form_module:"v1m-kss-form-z-drug",task_name:"Visit 1 Day 2 Morning - KSS"},
         "v1m-kss-form-z-drug":                    {url:"$H/m/library/kss-form.html",Table:"v1m-kss-z-drug",task_name:"Visit 1 Day 2 Morning - KSS"},
@@ -88,8 +90,10 @@
         "v1m-word-pairs-set1-form-z-drug":		{url:"$H/m/library/word-pairs-form.html",Table:"v1m-word-pairs-set1-z-drug",task_name:"Visit 1 Day 2 Morning - Word Pair Set 1"},
         "v1m-word-pairs-set2-data-z-drug":		{url:"$H/m/library/word-pairs-data.html",Table:"v1m-word-pairs-set2-z-drug",form_module:"v1m-word-pairs-set2-form-z-drug",task_name:"Visit 1 Day 2 Morning - Word Pair Set 2"},
         "v1m-word-pairs-set2-form-z-drug":		{url:"$H/m/library/word-pairs-form.html",Table:"v1m-word-pairs-set2-z-drug",task_name:"Visit 1 Day 2 Morning - Word Pair Set 2"},
-        "v1m-ftt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-z-drug",form_module:"v1m-ftt-form-z-drug",Table2:"v1e-ftt-z-drug",task_name:"Visit 1 Day 2 Morning - FTT (6 mins)"},
-        "v1m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v1m-ftt-z-drug",task_name:"Visit 1 Day 2 Morning (6 mins"},
+        "v1m-ftt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-z-drug",form_module:"v1m-ftt-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT (6 mins)"},
+        "v1m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v1m-ftt-z-drug",Table2:"v1e-ftt-z-drug",task_name:"Visit 1 Day 2 - FTT Morning (6 mins"},
+        "v1m-ftt-alt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-alt-z-drug",form_module:"v1m-ftt-alt-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT Alt sequence (6 mins)"},
+        "v1m-ftt-alt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-alt-form.html",Table:"v1m-ftt-alt-z-drug",Table2:"v1e-ftt-alt-z-drug",task_name:"Visit 1 Day 2 Morning FTT Alt sequence (6 mins"},
 
         "v2e-visit-date-data-z-drug":              {url:"$H/m/library/date-data.html",Table:"v2e-visit-date-z-drug",form_module:"v2e-visit-date-form-z-drug",task_name:"Visit 2 Day 1 Evening - Visit Date"},
         "v2e-visit-date-form-z-drug":              {url:"$H/m/library/date-form.html",Table:"v2e-visit-date-z-drug",task_name:"Visit 2 Day 1 Evening - Visit Date"},
@@ -111,6 +115,8 @@
         "v2e-word-pairs-set2-trial3":	            {url:"$H/m/word-pairs/evening-wordpairs-set2-trial3.html"},
         "v2e-ftt-data-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"v2e-ftt-z-drug",form_module:"v2e-ftt-form-z-drug",task_name:"Visit 2 Day 1 Evening - FTT (12 mins)"},
         "v2e-ftt-form-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-form.html",Table:"v2e-ftt-z-drug",task_name:"Visit 2 Day 1 Evening FFT (12 mins)"},
+        "v2e-ftt-alt-data-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"v2e-ftt-alt-z-drug",form_module:"v2e-ftt-alt-form-z-drug",task_name:"Visit 2 Day 1 Evening - FTT Alt sequence (12 mins)"},
+        "v2e-ftt-alt-form-z-drug":		                        {url:"$H/m/neurocog/finger-tapping12-alt-form.html",Table:"v2e-ftt-alt-z-drug",task_name:"Visit 2 Day 1 Evening FTT Alt sequence (12 mins)"},
 
         "v2m-kss-data-z-drug":                    {url:"$H/m/library/kss-data.html",Table:"v2m-kss-z-drug",form_module:"v2m-kss-form-z-drug",task_name:"Visit 2 Day 2 Morning - KSS"},
         "v2m-kss-form-z-drug":                    {url:"$H/m/library/kss-form.html",Table:"v2m-kss-z-drug",task_name:"Visit 2 Day 2 Morning - KSS"},
@@ -120,8 +126,10 @@
         "v2m-word-pairs-set1-form-z-drug":		{url:"$H/m/library/word-pairs-form.html",Table:"v2m-word-pairs-set1-z-drug",task_name:"Visit 2 Day 2 Morning - Word Pair Set 1"},
         "v2m-word-pairs-set2-data-z-drug":		{url:"$H/m/library/word-pairs-data.html",Table:"v2m-word-pairs-set2-z-drug",form_module:"v2m-word-pairs-set2-form-z-drug",task_name:"Visit 2 Day 2 Morning - Word Pair Set 2"},
         "v2m-word-pairs-set2-form-z-drug":		{url:"$H/m/library/word-pairs-form.html",Table:"v2m-word-pairs-set2-z-drug",task_name:"Visit 2 Day 2 Morning - Word Pair Set 2"},
-        "v2m-ftt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v2m-ftt-z-drug",form_module:"v2m-ftt-form",Table2:"v2e-ftt-z-drug",task_name:"Visit 2 Day 2 Morning - FTT (6 mins)"},
-        "v2m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v2m-ftt-z-drug",task_name:"Visit 2 Day 2 Morning (6 mins"},
+        "v2m-ftt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v2m-ftt-z-drug",form_module:"v2m-ftt-form",task_name:"Visit 2 Day 2 Morning - FTT (6 mins)"},
+        "v2m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v2m-ftt-z-drug",Table2:"v2e-ftt-z-drug",task_name:"Visit 2 Day 2 Morning (6 mins"},
+        "v2m-ftt-alt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v2m-ftt-alt-z-drug",form_module:"v2m-ftt-alt-form-z-drug",task_name:"Visit 2 Day 2 Morning - FTT Alt sequence (6 mins)"},
+        "v2m-ftt-alt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-alt-form.html",Table:"v2m-ftt-alt-z-drug",Table2:"v2e-ftt-alt-z-drug",task_name:"Visit 2 Day 2 Morning FTT Alt sequence (6 mins"},
 
 
     }
