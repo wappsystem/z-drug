@@ -54,8 +54,8 @@
         "s-psqi-form-z-drug":                    {url:"$H/m/library/psqi-form.html",Table:"s-psqi-z-drug",task_name:"Screening - Pittsburgh Sleep Quality Index (PSQI)"},
         "s-sleep-diary-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"s-sleep-diary-z-drug",form_module:"s-sleep-diary-form-z-drug",task_name:"Screeening - Sleep Diary"},
         "s-sleep-diary-form-z-drug":		                {url:"$H/m/library/upload-file-form.html",Table:"s-sleep-diary-z-drug",task_name:"Screeening - Sleep Diary"},
-        "s-psg300-data-z-drug":		                {url:"$H/m/library/psg300-data.html",Table:"s-psg300-z-drug",form_module:"s-psg300-form-z-drug",task_name:"Screeening - PSG300"},
-        "s-psg300-form-z-drug":		                {url:"$H/m/library/psg300-form.html",Table:"s-psg300-z-drug",task_name:"Screeening - PSG300"},
+        "s-psggrr-data-z-drug":		                {url:"$H/m/library/psggrr-data.html",Table:"s-psggrr-z-drug",form_module:"s-psggrr-form-z-drug",task_name:"Screeening - Grael Research PSG Report"},
+        "s-psggrr-form-z-drug":		                {url:"$H/m/library/psggrr-form.html",Table:"s-psggrr-z-drug",task_name:"Screeening - Grael Research PSG Report"},
         "s-source-doc-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"s-source-doc-z-drug",form_module:"s-source-doc-form-z-drug",task_name:"Screeening - Source Documents"},
         "s-source-doc-form-z-drug":		                {url:"$H/m/library/upload-file-form.html",Table:"s-source-doc-z-drug",task_name:"Screeening - Source Documents"},
 
