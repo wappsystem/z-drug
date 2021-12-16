@@ -69,6 +69,8 @@
         "v1e-dass-form-z-drug":                    {url:"$H/m/library/dass-form.html",Table:"v1e-dass-z-drug",task_name:"Visit 1 Day 1 Evening - DASS"},
         "v1e-kss-data-z-drug":                    {url:"$H/m/library/kss-data.html",Table:"v1e-kss-z-drug",form_module:"v1e-kss-form-z-drug",task_name:"Visit 1 Day 1 Evening - KSS"},
         "v1e-kss-form-z-drug":                    {url:"$H/m/library/kss-form.html",Table:"v1e-kss-z-drug",task_name:"Visit 1 Day 1 Evening - KSS"},
+        "v1e-psqi-data-z-drug":                    {url:"$H/m/library/psqi-data.html",Table:"v1e-psqi-z-drug",form_module:"v1e-psqi-form-z-drug",task_name:"Visit 1 Day 1 Evening - PSQI"},
+        "v1e-psqi-form-z-drug":                    {url:"$H/m/library/psqi-form.html",Table:"v1e-psqi-z-drug",task_name:"Visit 1 Day 1 Evening - PSQI"},
         "v1e-word-pairs-set1-practice":	            {url:"$H/m/word-pairs/evening-wordpairs-set1-practice.html"},
         "v1e-word-pairs-set1-trial1":	            {url:"$H/m/word-pairs/evening-wordpairs-set1-trial1.html"},
         "v1e-word-pairs-set1-trial2":	            {url:"$H/m/word-pairs/evening-wordpairs-set1-trial2.html"},
