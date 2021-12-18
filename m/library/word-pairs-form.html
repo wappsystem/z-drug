@@ -177,7 +177,7 @@
                     data.Recall_Change_Unrelated=(parseInt($("input[name='Morning_Unrelated_Recall']").val())-parseInt($("input[name='Evening_Unrelated_Recall']").val())).toFixed(1);
                     data.Overnight_Retention_Unrelated=((parseInt($("input[name='Morning_Unrelated_Recall']").val())/parseInt($("input[name='Evening_Unrelated_Recall']").val()))*100).toFixed(1);
                 }
-                console.log(JSON.stringify(data))
+               // console.log(JSON.stringify(data))
                 return before_submit(data,index);
             }
 		}
