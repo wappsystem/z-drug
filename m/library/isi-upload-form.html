@@ -1,0 +1,136 @@
+<div id=D__ID>
+  <!--third html start -->
+  <div class="container mt-95 mb-3">
+    <div class="row">
+      <!-- form container start -->
+      <div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+        <div class="row">
+          <div class="col-12">
+            <!-- form start -->
+            <form id="F__ID">
+              <h3 id="title__ID"></h3>
+              <!-- participant part for all tsak forms -------------------->
+              <div id="participant_div__ID">
+                <div class="form-group">
+                  <fieldset class="subquestions">
+                    <label><span class="">Participant</span>
+                      <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </label><br>
+                    <label><span class="">Participant ID</span>
+                      <input type=text name="Participant_uid" class=form-control readonly />
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+              <button type="button" id="get_data__ID" class="btn btn-primary btn-lg">Get Data</button>
+              <div class="form-group">
+                <div class='row px-4'>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI</span>
+                      <input class="form-control" type="text" name="ISI" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 1</span>
+                      <input class="form-control" type="text" name="ISI_1" />
+                    </label>
+                  </div>
+                </div>
+                <hr>
+                <div class='row px-4'>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 1a</span>
+                      <input class="form-control" type="text" name="ISI_1a" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 1b</span>
+                      <input class="form-control" type="text" name="ISI_1b" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 1c</span>
+                      <input class="form-control" type="text" name="ISI_1c" />
+                    </label>
+                  </div>
+                </div>
+                <hr>
+                <div class='row px-4'>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 2</span>
+                      <input class="form-control" type="text" name="ISI_2" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 3</span>
+                      <input class="form-control" type="text" name="ISI_3" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 4</span>
+                      <input class="form-control" type="text" name="ISI_4" />
+                    </label>
+                  </div>
+                  <div class="col-sm-12 col-lg-3">
+                    <label class=''><span class=''>ISI 5</span>
+                      <input class="form-control" type="text" name="ISI_5" />
+                    </label>
+                  </div>
+                </div>
+                <hr>
+              </div>
+              <button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    function F__ID() {
+      //-------------------------------------
+      VmInclude: '__COMPONENT__/f/form.01.js'
+      VmInclude: '__CURRENT_PATH__/shared-form.js'
+      //-------------------------------------
+      var subj_id;
+      $('#D__ID').on('load',function(){
+        //console.log(m.input.participant_record.Data.Subject_ID)
+        subj_id=parseInt(m.input.participant_record.Data.Subject_ID)
+
+      })
+		  //------------------------------------
+      $("#get_data__ID").on('click', function(){
+        var isi_table=$vm.module_list['__MODULE__'].Table2
+        console.log(isi_table)
+        var query={ UID:subj_id}
+        var req={cmd:"find",table:isi_table,query:query}
+        if(subj_id!=undefined){
+          $vm.request(req,function(res){
+            //--------------------------
+            if(res.result.length!=undefined && res.result.length!=0){
+              $('#D__ID input[name="ISI"]').val(res.result[0].Data.ISI);
+              $('#D__ID input[name="ISI_1"]').val(res.result[0].Data.ISI_1);
+              $('#D__ID input[name="ISI_1a"]').val(res.result[0].Data.ISI_1a);
+              $('#D__ID input[name="ISI_1b"]').val(res.result[0].Data.ISI_1b);
+              $('#D__ID input[name="ISI_1c"]').val(res.result[0].Data.ISI_1c);
+              $('#D__ID input[name="ISI_2"]').val(res.result[0].Data.ISI_2);
+              $('#D__ID input[name="ISI_3"]').val(res.result[0].Data.ISI_3);
+              $('#D__ID input[name="ISI_4"]').val(res.result[0].Data.ISI_4);
+              $('#D__ID input[name="ISI_5"]').val(res.result[0].Data.ISI_5);
+            }
+          })
+        }
+        else{
+          $vm.alert("Open form via Participant page and Data Entry to get ISI data")
+        }
+      });
+    }
+  </script>
+  <style>
+    #D__ID .mt-95 {
+      max-width: 600px;
+    }
+
+    VmInclude:__CURRENT_PATH__/wappsystem-form.css
+  </style>
+</div>

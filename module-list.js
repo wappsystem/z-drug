@@ -58,6 +58,8 @@
         "s-psggrr-form-z-drug":		                {url:"$H/m/library/psggrr-form.html",Table:"s-psggrr-z-drug",task_name:"Screeening - Grael Research PSG Report"},
         "s-source-doc-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"s-source-doc-z-drug",form_module:"s-source-doc-form-z-drug",task_name:"Screeening - Source Documents"},
         "s-source-doc-form-z-drug":		                {url:"$H/m/library/upload-file-form.html",Table:"s-source-doc-z-drug",task_name:"Screeening - Source Documents"},
+        "s-isi-upload-data-z-drug":                    {url:"$H/m/library/isi-upload-data.html",Table:"s-isi-upload-z-drug",form_module:"s-isi-upload-form-z-drug",task_name:"Screening - Upload ISI from Pre-screening"},
+        "s-isi-upload-form-z-drug":                    {url:"$H/m/library/isi-upload-form.html",Table:"s-isi-upload-z-drug",Table2:"demo-z-drug-recruitment-record",task_name:"Screening - Upload ISI from Pre-screening"},
 
         "v1e-visit-date-data-z-drug":              {url:"$H/m/library/date-data.html",Table:"v1e-visit-date-z-drug",form_module:"v1e-visit-date-form-z-drug",task_name:"Visit 1 Day 1 Evening - Visit Date"},
         "v1e-visit-date-form-z-drug":              {url:"$H/m/library/date-form.html",Table:"v1e-visit-date-z-drug",task_name:"Visit 1 Day 1 Evening - Visit Date"},
