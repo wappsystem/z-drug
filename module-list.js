@@ -98,6 +98,10 @@
         "v1m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v1m-ftt-z-drug",Table2:"v1e-ftt-z-drug",task_name:"Visit 1 Day 2 - FTT Morning (6 mins"},
         "v1m-ftt-alt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-alt-z-drug",form_module:"v1m-ftt-alt-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT Alt sequence (6 mins)"},
         "v1m-ftt-alt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-alt-form.html",Table:"v1m-ftt-alt-z-drug",Table2:"v1e-ftt-alt-z-drug",task_name:"Visit 1 Day 2 Morning FTT Alt sequence (6 mins"},
+        "v1-sleep-diary-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"v1-sleep-diary-z-drug",form_module:"v1-sleep-diary-form-z-drug",task_name:"Visit 1 - Sleep Diary"},
+        "v1-sleep-diary-form-z-drug":		                {url:"$H/m/library/upload-file-form.html",Table:"v1-sleep-diary-z-drug",task_name:"Visit 1 - Sleep Diary"},
+        "v1-psggrr-data-z-drug":		                {url:"$H/m/library/psggrr-data.html",Table:"v1-psggrr-z-drug",form_module:"v1-psggrr-form-z-drug",task_name:"Visit 1 - Grael Research PSG Report"},
+        "v1-psggrr-form-z-drug":		                {url:"$H/m/library/psggrr-form.html",Table:"v1-psggrr-z-drug",task_name:"Visit 1 - Grael Research PSG Report"},
 
         "v2e-visit-date-data-z-drug":              {url:"$H/m/library/date-data.html",Table:"v2e-visit-date-z-drug",form_module:"v2e-visit-date-form-z-drug",task_name:"Visit 2 Day 1 Evening - Visit Date"},
         "v2e-visit-date-form-z-drug":              {url:"$H/m/library/date-form.html",Table:"v2e-visit-date-z-drug",task_name:"Visit 2 Day 1 Evening - Visit Date"},
@@ -134,6 +138,10 @@
         "v2m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v2m-ftt-z-drug",Table2:"v2e-ftt-z-drug",task_name:"Visit 2 Day 2 Morning (6 mins"},
         "v2m-ftt-alt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v2m-ftt-alt-z-drug",form_module:"v2m-ftt-alt-form-z-drug",task_name:"Visit 2 Day 2 Morning - FTT Alt sequence (6 mins)"},
         "v2m-ftt-alt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-alt-form.html",Table:"v2m-ftt-alt-z-drug",Table2:"v2e-ftt-alt-z-drug",task_name:"Visit 2 Day 2 Morning FTT Alt sequence (6 mins"},
+        "v2-sleep-diary-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"v2-sleep-diary-z-drug",form_module:"v2-sleep-diary-form-z-drug",task_name:"Visit 2 - Sleep Diary"},
+        "v2-sleep-diary-form-z-drug":		                {url:"$H/m/library/upload-file-form.html",Table:"v2-sleep-diary-z-drug",task_name:"Visit 2 - Sleep Diary"},
+        "v2-psggrr-data-z-drug":		                {url:"$H/m/library/psggrr-data.html",Table:"v2-psggrr-z-drug",form_module:"v2-psggrr-form-z-drug",task_name:"Visit 2 - Grael Research PSG Report"},
+        "v2-psggrr-form-z-drug":		                {url:"$H/m/library/psggrr-form.html",Table:"v2-psggrr-z-drug",task_name:"Visit 2 - Grael Research PSG Report"},
 
 
     }
