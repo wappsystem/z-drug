@@ -96,6 +96,8 @@
         "v1m-word-pairs-set2-form-z-drug":		{url:"$H/m/library/word-pairs-form.html",Table:"v1m-word-pairs-set2-z-drug",task_name:"Visit 1 Day 2 Morning - Word Pair Set 2"},
         "v1m-ftt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-z-drug",form_module:"v1m-ftt-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT (6 mins)"},
         "v1m-ftt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-form.html",Table:"v1m-ftt-z-drug",Table2:"v1e-ftt-z-drug",task_name:"Visit 1 Day 2 - FTT Morning (6 mins"},
+        "v1m-ftt-manual-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-manual-data.html",Table:"v1m-ftt-z-drug",form_module:"v1m-ftt-manual-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT Manual"},
+        "v1m-ftt-manual-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-manual-form.html",Table:"v1m-ftt-z-drug",Table2:"v1e-ftt-z-drug",task_name:"Visit 1 Day 2 - FTT Morning Manual"},
         "v1m-ftt-alt-data-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"v1m-ftt-alt-z-drug",form_module:"v1m-ftt-alt-form-z-drug",task_name:"Visit 1 Day 2 Morning - FTT Alt sequence (6 mins)"},
         "v1m-ftt-alt-form-z-drug":		            {url:"$H/m/neurocog/finger-tapping6-alt-form.html",Table:"v1m-ftt-alt-z-drug",Table2:"v1e-ftt-alt-z-drug",task_name:"Visit 1 Day 2 Morning FTT Alt sequence (6 mins"},
         "v1-sleep-diary-data-z-drug":		                {url:"$H/m/library/upload-file-data.html",Table:"v1-sleep-diary-z-drug",form_module:"v1-sleep-diary-form-z-drug",task_name:"Visit 1 - Sleep Diary"},
