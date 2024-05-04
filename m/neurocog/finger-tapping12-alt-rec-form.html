@@ -1,0 +1,151 @@
+<div id=D__ID>
+	<!--third html start -->
+	<div class="container mt-95 mb-3">
+		<div class="row">
+			<!-- form container start -->
+			<div class="col-12 col-lg-12 col-md-12 col-sm-12 mx-auto formbox">
+				<div class="row">
+					<div class="col-12">
+						<!-- form start -->
+						<form id="F__ID">
+							<h3 id=title__ID></h3>
+							<!-- participant part for all tsak forms -------------------->
+							<div id="participant_div__ID">
+								<div class="form-group">
+									<fieldset class="subquestions">
+										<label><span class="">Participant</span>
+											<input type=text name="Participant" class=form-control id=Participant__ID
+												data-id="Participant" />
+										</label><br>
+										<label><span class="">Participant ID</span>
+											<input type=text name="Participant_uid" class=form-control readonly />
+										</label>
+									</fieldset>
+								</div>
+							</div>
+							<!---------------------------------------------------->
+							<div class="form-group">
+								<fieldset class="subquestions">
+									<h4></h4>
+								</fieldset>
+							</div>
+							<!-- Form Inputs-------------------------------------->
+							<div id=dynamic_part__ID></div>
+							<!---------------------------------------------------->
+							<!-- submit button part for all task forms------------>
+							<button type="submit" id="submit__ID" class="btn btn-primary btn-lg">Submit</button>
+							<div class="form-group">
+								<div class="pb-3">
+									<label><span>Set Status</span></label>
+									<fieldset class="">
+										<label class="radiobuttons">
+											<input type="radio" name="_status" value="#FF0000">
+											<span class="checkmark" style="background-color:#FF0000"></span>&nbsp;</label>
+										<label class="radiobuttons">
+											<input type="radio" name="_status" value="#FFCC00">
+											<span class="checkmark" style="background-color:#FFCC00"></span>&nbsp;</label>
+										<label class="radiobuttons">
+											<input type="radio" name="_status" value="#00FF00">
+											<span class="checkmark" style="background-color:#00FF00"></span>Manually&nbsp;&nbsp;</label>
+										<label class="radiobuttons">
+											<input type="radio" name="_status" value="" checked>
+											<span class="checkmark" style="background-color:#C9C9C9"></span>Automatically</label>
+									</fieldset>
+								</div>
+							</div>
+						</form>
+						<!---------------------------------------------------->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		function F__ID() {
+			//-------------------------------------
+			var fields="Correct_1,Correct_2,Correct_3,Correct_4,Correct_5,Correct_6,Correct_7,Correct_8,Correct_9,Correct_10,Correct_11,Correct_12,Error_1,Error_2,Error_3,Error_4,Error_5,Error_6,Error_7,Error_8,Error_9,Error_10,Error_11,Error_12,Time_1,Time_2,Time_3,Time_4,Time_5,Time_6,Time_7,Time_8,Time_9,Time_10,Time_11,Time_12,PreTLS,PoTLS,PreTES,PoTES,PreTRT,PoTRT,Tapping_Time,Match,Sequence_Number";			$('#header__ID').text("FTT Manual entry");
+			//-------------------------------------
+			var fs = fields.split(',');
+			var txt = "";
+			for (var i = 0; i < fs.length; i++) {
+				var type = "text"
+				txt += '<div class="form-group">\r\n';
+				txt += '<div class="questiongroup">\r\n';
+				txt += '<fieldset class="">\r\n';
+				txt += '<label ><span class="">' + fs[i].replace(/_/g, ' ') + '</span>\r\n';
+				txt += '<input class="form-control form-control-sm" type="' + type + '" name="' + fs[i] + '" >\r\n';
+				txt += '</label>\r\n';
+				txt += '</fieldset>\r\n';
+				txt += '</div>\r\n';
+				txt += '</div>\r\n';
+			}
+			$('#dynamic_part__ID').html(txt);
+			//-------------------------------------
+			VmInclude:__COMPONENT__/f/form.01.js
+			VmInclude:__CURRENT_PATH__/../../library/shared-form.js
+			//-------------------------------------
+			var load2 = m.load;
+			var data={};
+			m.load = function () {
+				//console.log(JSON.stringify(m.input))
+				load2();
+				$('#title__ID').text($vm.module_list[$vm.vm['__ID'].name].task_name);
+				data=m.input.record.Data
+				calc(data);
+				console.log(JSON.stringify(data))
+			}
+			//-------------------------------------
+			var calc=function(data){
+			var tt=data.Tapping_Time.split(',');
+            var m=data.Match.split(',');
+            var sn=data.Sequence_Number.split(',');
+			var k=0;
+				var check=true;
+				var group=0;
+				var timing=0;
+				var correct=[];
+				var error=[];
+				var time=[];
+				var pos=0;
+				for (var i=1;i<13;i++) {
+					var r_sn = sn.filter(pp => pp ==i);
+					//r_sn=sn.slice(pos,pos+parseInt(r_sn.length/5)*5);
+					var r_tt=tt.slice(pos,pos+parseInt(r_sn.length));
+					var r_m=m.slice(pos,pos+parseInt(r_sn.length));
+					var err=0;
+					var cor=0;
+					var tim=0;
+					for(var j=0;j<parseInt(r_sn.length);j++){
+						var rr_m=r_m.slice(j,(j+1));
+						var rr_tt=r_tt.slice(j,(j+1));
+						var c=rr_m.filter(pp => pp =='N')
+						if(c.length>0) err++;
+						else {
+							cor++;
+							tim+=parseInt(rr_tt);
+						}
+					}
+					error.push(err);
+					correct.push(cor);
+					time.push((tim/cor/1000).toFixed(2));
+					pos+=r_sn.length;
+				}
+				//console.log("AAA: "+((parseInt(correct[0])+parseInt(correct[1])+parseInt(correct[2]))/3).toFixed(1))
+				$("#F__ID input[name=PreTLS]").val(((parseInt(correct[0])+parseInt(correct[1])+parseInt(correct[2]))/3).toFixed(1));
+				$("#F__ID input[name=PoTLS]").val(((parseInt(correct[9])+parseInt(correct[10])+parseInt(correct[11]))/3).toFixed(1));
+				$("#F__ID input[name=PreTES]").val(((parseInt(error[0])+parseInt(error[1])+parseInt(error[2]))/3).toFixed(1));
+				$("#F__ID input[name=PoTES]").val(((parseInt(error[9])+parseInt(error[10])+parseInt(error[11]))/3).toFixed(1));
+				$("#F__ID input[name=PreTRT]").val(((parseFloat(time[0])+parseFloat(time[1])+parseFloat(time[2]))/3).toFixed(2));
+				$("#F__ID input[name=PoTRT]").val(((parseFloat(time[9])+parseFloat(time[10])+parseFloat(time[11]))/3).toFixed(2));
+			}
+
+		}
+	</script>
+	<style>
+		#D__ID .mt-95 {
+			max-width: 600px;
+		}
+
+		VmInclude:__CURRENT_PATH__/../../library/wappsystem-form.css
+	</style>
+</div>

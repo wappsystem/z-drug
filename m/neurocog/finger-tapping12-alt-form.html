@@ -96,6 +96,12 @@
                     data.Correct_10=correct[9];data.Error_10=error[9];data.Time_10=time[9];
                     data.Correct_11=correct[10];data.Error_11=error[10];data.Time_11=time[10];
                     data.Correct_12=correct[11];data.Error_12=error[11];data.Time_12=time[11];
+					data.PreTLS=((parseInt(correct[0])+parseInt(correct[1])+parseInt(correct[2]))/3).toFixed(1);
+					data.PoTLS=((parseInt(correct[9])+parseInt(correct[10])+parseInt(correct[11]))/3).toFixed(1);
+					data.PreTES=((parseInt(error[0])+parseInt(error[1])+parseInt(error[2]))/3).toFixed(1);
+					data.PoTES=((parseInt(error[9])+parseInt(error[10])+parseInt(error[11]))/3).toFixed(1);
+					data.PreTRT=((parseFloat(time[0])+parseFloat(time[1])+parseFloat(time[2]))/3).toFixed(2);
+					data.PoTRT=((parseFloat(time[9])+parseFloat(time[10])+parseFloat(time[11]))/3).toFixed(2);
 		}
 		//------------------------------------
 		var ClearIntervals = function()
